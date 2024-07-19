@@ -123,10 +123,10 @@ print(greet("Alice"))
 
 ### Lists
 
-Ordered: The items in a list have a defined order, and this order will not change unless explicitly changed by methods like sort().
-Indexed: Items in a list can be accessed by their position (index).
-Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
-Allows Duplicates: Lists can contain multiple occurrences of the same item.
+- Ordered: The items in a list have a defined order, and this order will not change unless explicitly changed by methods like sort().
+- Indexed: Items in a list can be accessed by their position (index).
+- Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
+- Allows Duplicates: Lists can contain multiple occurrences of the same item.
 
 #### Creating Lists
 ```python
@@ -256,10 +256,10 @@ total = sum(numbers)  # 150
 
 ### Dictonaries
 
-Key-Value Pairs: Dictionaries store data in key-value pairs. Each key is unique and maps to a value.
-Unordered (until Python 3.7): The items are not stored in a specific order. (Note: As of Python 3.7, dictionaries maintain insertion order, but this is considered an implementation detail.)
-Mutable: You can change, add, or remove key-value pairs after the dictionary is created.
-No Duplicate Keys: Each key must be unique, but values can be duplicated.
+- Key-Value Pairs: Dictionaries store data in key-value pairs. Each key is unique and maps to a value.
+- Unordered (until Python 3.7): The items are not stored in a specific order. (Note: As of Python 3.7, dictionaries maintain insertion order, but this is considered an implementation detail.)
+- Mutable: You can change, add, or remove key-value pairs after the dictionary is created.
+- No Duplicate Keys: Each key must be unique, but values can be duplicated.
 
 #### Creating a Dictionary
 ```python
@@ -346,10 +346,10 @@ dict1 = {**dict1, **dict2}  # dict1 is now {'a': 1, 'b': 3, 'c': 4}
 
 ### Sets
 
-Unordered: Sets do not maintain any order of elements.
-Unindexed: You cannot access items in a set by referring to an index.
-Mutable: You can add or remove items, but you cannot change an existing item (although the set itself is mutable).
-No Duplicates: Sets do not allow duplicate items. Each item must be unique.
+- Unordered: Sets do not maintain any order of elements.
+- Unindexed: You cannot access items in a set by referring to an index.
+- Mutable: You can add or remove items, but you cannot change an existing item (although the set itself is mutable).
+- No Duplicates: Sets do not allow duplicate items. Each item must be unique.
 
 #### Basics
 ```python

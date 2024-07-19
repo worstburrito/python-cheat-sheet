@@ -373,6 +373,8 @@ print(fruits)
 
 #### Empty Set
 ```python
+# Because the empty bracket {} syntax creates an empty dictionary, to create an empty set, you need to use the set() function.
+
 fruits = set()
 fruits.add('pear')
 print(fruits)
@@ -392,10 +394,15 @@ for fruit in fruits:
 
 ```
 
-#### Topic
+#### Removeing Values
 ```python
+fruits = {'apple', 'banana', 'grape'}
+fruits.remove('apple')
+print(fruits)
+# Prints: {'banana', 'grape'}
 
 ```
+
 #### Topic
 ```python
 

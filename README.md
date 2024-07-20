@@ -5,9 +5,10 @@
 2. [Data Types](#data-types)
 3. [Variables](#variables)
 4. [Operators](#operators)
-5. [Control Flow](#control-flow)
-6. [Functions](#functions)
-7. [Collections](#collections)
+5. [Mathematical Calculations](#mathematical-calculations)
+6. [Control Flow](#control-flow)
+7. [Functions](#functions)
+8. [Collections](#collections)
 
 ---
 
@@ -83,6 +84,40 @@ less_equal = (5 <= 2)
 and_op = (5 > 2 and 5 < 10)
 or_op = (5 > 2 or 5 < 2)
 not_op = not (5 > 2)
+
+```
+
+## Mathematical Calculations
+```python
+# Absolute Value: abs()
+result = abs(-5)  # result is 5
+
+# Round: round()
+result = round(3.6)  # result is 4
+
+# Ceiling: math.ceil()
+import math
+result = math.ceil(3.2)  # result is 4
+
+# Floor: math.floor()
+import math
+result = math.floor(3.8)  # result is 3
+
+# Square Root: math.sqrt()
+import math
+result = math.sqrt(16)  # result is 4.0
+
+# Power: pow()
+result = pow(2, 3)  # result is 8
+
+# Maximum: max()
+result = max(1, 5, 3)  # result is 5
+
+# Minimum: min()
+result = min(1, 5, 3)  # result is 1
+
+# Sum: sum()
+result = sum([1, 2, 3, 4])  # result is 10
 
 ```
 

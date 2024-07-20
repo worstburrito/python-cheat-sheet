@@ -29,6 +29,10 @@ multi-line comment
 if 5 > 2:
     print("Five is greater than two!")
 
+# F Strings
+score = 1.697546
+print(f"Your score is {score}")
+
 ```
 
 ## Data Types

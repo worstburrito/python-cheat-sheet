@@ -33,6 +33,9 @@ if 5 > 2:
 score = 1.697546
 print(f"Your score is {score}")
 
+# F Strings with decimal places
+print(f"Each person should pay: ${final_amount:.2f}")
+
 ```
 
 ## Data Types

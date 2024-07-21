@@ -14,6 +14,7 @@
 10. [Odd or Even](#odd-or-even)
 11. [BMI Calculator](#bmi-calculator)
 12. [Leap Year](#leap-year)
+13. [Pizza Order](#pizza-order)
 
 ---
 

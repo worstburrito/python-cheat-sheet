@@ -10,7 +10,8 @@
 7. [Functions](#functions)
 8. [Collections](#collections)
 ## Bits of Coding Practice
-9. []()
+9. [Life in Weeks](#life-in-weeks)
+10. [Odd or Even](#odd-or-even)
 
 ---
 
@@ -456,8 +457,7 @@ print(fruits)
 
 ```
 
-## Bits of Coding Practice
-### Life in Weeks
+## Life in Weeks
 ```python
 age = input()
 
@@ -468,7 +468,7 @@ weeks_left = total_weeks_90 - your_weeks
 print(f"You have {weeks_left} weeks left.")
 ```
 
-### Odd or Even
+## Odd or Even
 ```python
 number = int(input())
 

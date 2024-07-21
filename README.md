@@ -12,6 +12,8 @@
 ## Bits of Coding Practice
 9. [Life in Weeks](#life-in-weeks)
 10. [Odd or Even](#odd-or-even)
+11. [BMI Calculator](#bmi-calculator)
+12. [Leap Year](#leap-year)
 
 ---
 
@@ -439,7 +441,7 @@ for fruit in fruits:
 
 ```
 
-#### Removeing Values
+#### Removing Values
 ```python
 fruits = {'apple', 'banana', 'grape'}
 fruits.remove('apple')
@@ -478,7 +480,61 @@ else:
   print("This is an odd number.")
 ```
 
-## Title
+## BMI Calculator
 ```python
+height = float(input())
+weight = int(input())
 
+bmi = weight / (height * height)
+
+if bmi < 18.5:
+  print(f"Your BMI is {bmi}, you are underweight.")
+elif 18.5 <= bmi < 25:
+  print(f"Your BMI is {bmi}, you have a normal weight.")
+elif 25 <= bmi < 30:
+  print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif 30 <= bmi < 35:
+  print(f"Your BMI is {bmi}, you are obese.")
+elif bmi <= 35:
+  print(f"Your BMI is {bmi}, you are clinically obese.")
+```
+
+## Leap Year
+```python
+year = int(input())
+
+if (year % 400 == 0):
+  print("Leap year")
+elif (year % 100 == 0):
+  print("Not leap year")
+elif (year % 4 == 0):
+  print("Leap year")
+else:
+  print("Not leap year")
+```
+
+## Pizza Order
+```python
+print("Thank you for choosing Python Pizza Deliveries!")
+size = input() # What size pizza do you want? S, M, or L
+add_pepperoni = input() # Do you want pepperoni? Y or N
+extra_cheese = input() # Do you want extra cheese? Y or N
+
+bill = 0
+if size == "S":
+  bill += 15
+elif size == "M":
+  bill += 20
+elif size == "L":
+  bill += 25
+
+if add_pepperoni == "Y" and size == "S":
+  bill += 2
+elif add_pepperoni == "Y":
+  bill += 3
+
+if extra_cheese == "Y":
+  bill += 1
+
+print(f"Your final bill is: ${bill}.")
 ```

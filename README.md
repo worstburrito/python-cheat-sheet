@@ -9,6 +9,8 @@
 6. [Control Flow](#control-flow)
 7. [Functions](#functions)
 8. [Collections](#collections)
+## Bits of Coding Practice
+9. []()
 
 ---
 
@@ -454,9 +456,26 @@ print(fruits)
 
 ```
 
-## Title
+## Bits of Coding Practice
+### Life in Weeks
 ```python
+age = input()
 
+total_weeks_90 = 90 * 52
+your_weeks = int(age) * 52
+weeks_left = total_weeks_90 - your_weeks
+
+print(f"You have {weeks_left} weeks left.")
+```
+
+### Odd or Even
+```python
+number = int(input())
+
+if number % 2 == 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
 ```
 
 ## Title

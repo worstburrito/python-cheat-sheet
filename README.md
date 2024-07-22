@@ -19,7 +19,7 @@
 6. [Love Calculator](#love-calculator)
 7. [Heads or Tails](#heads-or-tails)
 8. [Banker Roulette](#banker-roulette)
-9. [Treasure Map]()
+9. [Treasure Map](#treasure-map)
 ## 100 Days of Python Projects
 1. [Band Name Generator](#band-name-generator)
 2. [Tip Calculator](#tip-calculator)
@@ -615,6 +615,25 @@ random_index = random.randint(0, len(names) -1)
 pick_name = names[random_index]
 
 print(f"{pick_name} is going to buy the meal today!")
+```
+
+## Treasure Map
+```python
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() # Where do you want to put the treasure?
+
+letter = position[0].lower()
+abc = ["a", "b", "c"]
+letter_index = abc.index(letter)
+number_index = int(position[1]) -1
+map[number_index][letter_index] = "X"
+
+
+print(f"{line1}\n{line2}\n{line3}")
 ```
 
 ## Band Name Generator

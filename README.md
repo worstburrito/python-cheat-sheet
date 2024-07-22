@@ -312,6 +312,19 @@ total = sum(numbers)  # 150
 
 ```
 
+#### Nested Lists
+```python
+# dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"] 
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+
+print(dirty_dozen)
+# [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
+```
+
 ### Dictonaries
 
 - Key-Value Pairs: Dictionaries store data in key-value pairs. Each key is unique and maps to a value.

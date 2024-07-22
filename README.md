@@ -719,6 +719,82 @@ else:
 
 ## Rock Paper Scissors
 ```python
+import random
 
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+
+# Rock wins against scissors.
+# Scissors win against paper.
+# Paper wins against rock.
+
+player_1 = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
+player_2 = random.randint(0,2)
+
+# Display what player 1 chose
+if player_1 == 0:
+    print("You chose rock.")
+    print(rock)
+elif player_1 == 1:
+    print("You chose paper.")
+    print(paper)
+elif player_1 == 2:
+    print("You chose scissors.")
+    print(scissors)
+else:
+    print("Invalid selection. Game over.")
+
+# Display what player 2 chose
+if player_2 == 0:
+    print("The computer chose rock.")
+    print(rock)
+elif player_2 == 1:
+    print("The computer chose paper.")
+    print(paper)
+else:
+    print("The computer chose scissors.")
+    print(scissors)
+
+# Compare player 1 vs. player 2 to see who won
+if player_1 == player_2:
+    print("You tied.")
+elif player_1 == 0 and player_2 == 2:
+    print("You win!")
+elif player_1 == 2 and player_2 == 0:
+    print("You lose.")
+elif player_1 == 2 and player_2 == 1:
+    print("You win!")
+elif player_1 == 1 and player_2 == 2: 
+    print("You lose.")
+elif player_1 == 1 and player_2 == 0: 
+    print("You win!")
+elif player_1 == 0 and player_2 == 1: 
+    print("You lose.")
 ```
 

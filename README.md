@@ -17,7 +17,7 @@
 4. [Leap Year](#leap-year)
 5. [Pizza Order](#pizza-order)
 6. [Love Calculator](#love-calculator)
-7. [Heads or Tails]()
+7. [Heads or Tails](#heads-or-tails)
 8. [Banker Roulette]()
 9. [Treasure Map]()
 ## 100 Days of Python Projects

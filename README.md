@@ -1,6 +1,6 @@
 # Python Beginner's Cheat Sheet
 
-## Table of Contents
+## Python Reference Code
 1. [Basics](#basics)
 2. [Data Types](#data-types)
 3. [Variables](#variables)

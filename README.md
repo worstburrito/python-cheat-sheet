@@ -9,21 +9,22 @@
 6. [Control Flow](#control-flow)
 7. [Functions](#functions)
 8. [Collections](#collections)
+9. [Modules](#modules)
 ## Bits of Coding Practice
-9. [Life in Weeks](#life-in-weeks)
-10. [Odd or Even](#odd-or-even)
-11. [BMI Calculator](#bmi-calculator)
-12. [Leap Year](#leap-year)
-13. [Pizza Order](#pizza-order)
-14. [Love Calculator](#love-calculator)
-15. [Heads or Tails]()
-16. [Banker Roulette]()
-17. [Treasure Map]()
+1. [Life in Weeks](#life-in-weeks)
+2. [Odd or Even](#odd-or-even)
+3. [BMI Calculator](#bmi-calculator)
+4. [Leap Year](#leap-year)
+5. [Pizza Order](#pizza-order)
+6. [Love Calculator](#love-calculator)
+7. [Heads or Tails]()
+8. [Banker Roulette]()
+9. [Treasure Map]()
 ## 100 Days of Python Projects
-15. [Band Name Generator](#)
-16. [Tip Calculator](#)
-17. [Treasure Island](#)
-18. [Rock Paper Scissors](#)
+1. [Band Name Generator](#)
+2. [Tip Calculator](#)
+3. [Treasure Island](#)
+4. [Rock Paper Scissors](#)
 
 ---
 
@@ -460,13 +461,12 @@ print(fruits)
 
 ```
 
-#### Topic
+## Modules
 ```python
-
-```
-#### Topic
-```python
-
+# random
+import random
+number = random.randint(1,100)
+print(number)
 ```
 
 ## Life in Weeks

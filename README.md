@@ -16,6 +16,14 @@
 12. [Leap Year](#leap-year)
 13. [Pizza Order](#pizza-order)
 14. [Love Calculator](#love-calculator)
+15. [Heads or Tails]()
+16. [Banker Roulette]()
+17. [Treasure Map]()
+## 100 Days of Python Projects
+15. [Band Name Generator](#)
+16. [Tip Calculator](#)
+17. [Treasure Island](#)
+18. [Rock Paper Scissors](#)
 
 ---
 
@@ -570,3 +578,90 @@ else:
   print(f"Your score is {score}.")
 
 ```
+
+## Band Name Generator
+```python
+welcome = "Welcome to the Band Name Generator."
+print(welcome)
+
+city = input("What's the name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+band_name = city + " " + pet
+
+print(f"Your band name could be {band_name}")
+```
+
+## Tip Calculator
+```python
+print("Welcome to the tip calculator.")
+bill = input("What was the total bill? \n$")
+tip = input("What percentage tip would you like to leave?\n")
+people = input("How many people to split the bill?\n")
+bill_float = float(bill)
+tip_float = float(tip)
+people_float = float(people)
+
+tip_percent = tip_float / 100
+tip_amount = bill_float * tip_percent
+
+
+total_bill = bill_float + tip_amount
+bill_per_person = total_bill / people_float
+
+final_amount = round(bill_per_person, 2)
+final_amount = "{:.2f}".format(bill_per_person)
+
+print(f"Each person should pay: ${final_amount}")
+```
+
+## Treasure Island
+```python
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+choice_1 = input("You've been walking for hours. You're tired and hungry, but you've come to a fork in the road. Which way do you go? left or right\n").lower()
+if choice_1 == "left":
+    choice_2 = input("You've made it down the fork and you've come to a lake. There is an island in the middle of the lake. You can search for a boat to get to it, or you can try to swim there. Do you 'search' or 'swim'?\n").lower()
+    if choice_2 == "search":
+        choice_3 = input("You arrive at the island unharmed. There is a house with 3 doors. Each door is a different color. There is one red, one yellow, and one blue. Which door do you choose?\n").lower()
+        if choice_3 == "red": 
+            print("You open the red door and are immediately sucked inside the room. The door slams shut behind you, locking. The room is full of fire. Your game is over.")
+        elif choice_3 == "yellow":
+            print("You open the yellow door. A bright light greets you. As your eyes adjust, you realize you are outside in a sunny grove. In front of you is an ornate chest. You have found the treasure. You win!")
+        elif choice_3 == "blue":
+            print("You open the blue door, and a room appears in front of you. You begin to walk in, but the floor was a mirage. You fall forever. Your game is over.")
+        else:
+            print("You attempt to open a door that doesn't exist. The doorknob explodes in your hand. Your game is over.")
+    else:
+        print("You dive in confidently, but you're attack by a giant lake trout. Your game is over.")
+else:
+    print("You start walking, but suddenly your feet fall out from under you. You've fallen into a hole. Your game is over.") 
+```
+
+## Rock Paper Scissors
+```python
+
+```
+

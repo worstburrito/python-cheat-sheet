@@ -18,13 +18,13 @@
 5. [Pizza Order](#pizza-order)
 6. [Love Calculator](#love-calculator)
 7. [Heads or Tails](#heads-or-tails)
-8. [Banker Roulette]()
+8. [Banker Roulette](#banker-roulette)
 9. [Treasure Map]()
 ## 100 Days of Python Projects
-1. [Band Name Generator](#)
-2. [Tip Calculator](#)
-3. [Treasure Island](#)
-4. [Rock Paper Scissors](#)
+1. [Band Name Generator](#band-name-generator)
+2. [Tip Calculator](#tip-calculator)
+3. [Treasure Island](#treasure-island)
+4. [Rock Paper Scissors](#rock-paper-scissors)
 
 ---
 
@@ -588,6 +588,20 @@ if random_side == 1:
     print("Heads")
 else:
     print("Tails")
+```
+
+## Banker Roulette
+```python
+# import random module
+import random
+
+# create a variable that selects a random index for the length of your list
+random_index = random.randint(0, len(names) -1)
+
+# Use the random_index to pick an item from the list
+pick_name = names[random_index]
+
+print(f"{pick_name} is going to buy the meal today!")
 ```
 
 ## Band Name Generator

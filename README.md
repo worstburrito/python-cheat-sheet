@@ -10,7 +10,7 @@
 7. [Functions](#functions)
 8. [Collections](#collections)
 9. [Modules](#modules)
-## Bits of Coding Practice
+## Small Projects
 1. [Life in Weeks](#life-in-weeks)
 2. [Odd or Even](#odd-or-even)
 3. [BMI Calculator](#bmi-calculator)
@@ -20,11 +20,15 @@
 7. [Heads or Tails](#heads-or-tails)
 8. [Banker Roulette](#banker-roulette)
 9. [Treasure Map](#treasure-map)
+10. [High Score]()
+11. [Adding Even Numbers]()
+12. [Fizzbuzz]()
 ## 100 Days of Python Projects
 1. [Band Name Generator](#band-name-generator)
 2. [Tip Calculator](#tip-calculator)
 3. [Treasure Island](#treasure-island)
 4. [Rock Paper Scissors](#rock-paper-scissors)
+5. [Password Generator]()
 
 ---
 
@@ -482,6 +486,7 @@ number = random.randint(1,100)
 print(number)
 ```
 
+# Small Projects
 ## Life in Weeks
 ```python
 age = input()
@@ -636,6 +641,23 @@ map[number_index][letter_index] = "X"
 print(f"{line1}\n{line2}\n{line3}")
 ```
 
+## High Score
+```python
+
+```
+
+## Adding Even Numbers
+```python
+
+```
+
+
+## Fizzbuzz
+```python
+
+```
+
+# 100 Days of Python Projects
 ## Band Name Generator
 ```python
 welcome = "Welcome to the Band Name Generator."
@@ -796,5 +818,10 @@ elif player_1 == 1 and player_2 == 0:
     print("You win!")
 elif player_1 == 0 and player_2 == 1: 
     print("You lose.")
+```
+
+## Password Generator
+```python
+
 ```
 

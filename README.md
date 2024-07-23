@@ -20,15 +20,15 @@
 7. [Heads or Tails](#heads-or-tails)
 8. [Banker Roulette](#banker-roulette)
 9. [Treasure Map](#treasure-map)
-10. [High Score]()
-11. [Adding Even Numbers]()
-12. [Fizzbuzz]()
+10. [High Score](#high-score)
+11. [Adding Even Numbers](#adding-even-numbers)
+12. [Fizzbuzz](#fizzbuzz)
 ## 100 Days of Python Projects
 1. [Band Name Generator](#band-name-generator)
 2. [Tip Calculator](#tip-calculator)
 3. [Treasure Island](#treasure-island)
 4. [Rock Paper Scissors](#rock-paper-scissors)
-5. [Password Generator]()
+5. [Password Generator](#password-generator)
 
 ---
 

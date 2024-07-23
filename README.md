@@ -640,21 +640,65 @@ map[number_index][letter_index] = "X"
 
 print(f"{line1}\n{line2}\n{line3}")
 ```
+## Average Height
+```python
+# Input a Python list of student heights
+student_heights = input().split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+# Find the count, sum, and average of the list
+count = 0
+sum = 0
+for student in student_heights:
+  count += 1
+  sum += student
+
+print(f"total height = {sum}")
+print(f"number of students = {count}")
+print(f"average height = {round(sum / count)}")
+```
 
 ## High Score
 ```python
+# Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
 
+# Loop through to find highest score
+max_score = 0
+for score in student_scores:
+  if score > max_score:
+    max_score = score
+
+print(f"The highest score in the class is: {max_score}")
 ```
 
 ## Adding Even Numbers
 ```python
+target = int(input()) # Enter a number between 0 and 1000
 
+sum = 0
+for number in range(2, target + 1):
+  if number % 2 == 0:
+      sum += number
+print(sum)
 ```
 
 
 ## Fizzbuzz
 ```python
-
+target = 100
+for number in range(1, target + 1):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
 ```
 
 # 100 Days of Python Projects

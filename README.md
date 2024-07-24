@@ -173,11 +173,11 @@ while count < 5:
 ## Functions
 ```python
 # Function definition
-def greet(name):
-    return f"Hello, {name}!"
+def greeting(name):
+    return print(f"Hello {name}!")
 
-# Function call
-print(greet("Alice"))
+# Using an input
+greeting(input("Please enter your name:\n"))
 
 ```
 

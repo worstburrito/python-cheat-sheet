@@ -158,11 +158,11 @@ elif x == 0:
 else:
     print("x is negative")
 
-# For Loop
+# For Loop: best for iterations and you need to do something for each thing you're iterating over
 for i in range(5):
     print(i)
 
-# While Loop
+# While Loop: best for repeating functionality until a condition is met
 count = 0
 while count < 5:
     print(count)

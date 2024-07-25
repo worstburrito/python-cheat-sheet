@@ -29,6 +29,7 @@
 3. [Treasure Island](#treasure-island)
 4. [Rock Paper Scissors](#rock-paper-scissors)
 5. [Password Generator](#password-generator)
+6. [Hangman](#hangman)
 
 ---
 
@@ -900,3 +901,7 @@ new_password = "".join(random.sample(password, len(password)))
 print(f"Your new password is: {new_password}")
 ```
 
+## Hangman
+```python
+
+```

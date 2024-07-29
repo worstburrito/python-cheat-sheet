@@ -8,8 +8,10 @@
 5. [Mathematical Calculations](#mathematical-calculations)
 6. [Control Flow](#control-flow)
 7. [Functions](#functions)
-8. [Collections](#collections)
-9. [Modules](#modules)
+8. [Lists](#lists)
+9. [Dictonaries](#dictionaries)
+10. [Sets](#sets)
+11. [Modules](#modules)
 
 
 ---
@@ -163,16 +165,15 @@ greeting(input("Please enter your name:\n"))
 
 ```
 
-## Collections
 
-### Lists
+## Lists
 
 - Ordered: The items in a list have a defined order, and this order will not change unless explicitly changed by methods like sort().
 - Indexed: Items in a list can be accessed by their position (index).
 - Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
 - Allows Duplicates: Lists can contain multiple occurrences of the same item.
 
-#### Creating Lists
+### Creating Lists
 ```python
 # Empty list
 empty_list = []
@@ -185,7 +186,7 @@ mixed_list = [1, "hello", 3.14, True]
 
 ```
 
-#### Accessing Elements
+### Accessing Elements
 ```python
 # Accessing elements by index (0-based)
 first_fruit = fruits[0]  # "apple"
@@ -193,7 +194,7 @@ last_fruit = fruits[-1]  # "cherry"
 
 ```
 
-#### Slicing lists
+### Slicing lists
 ```python
 # Slicing syntax
 my_list[ start : stop : step ]
@@ -213,7 +214,7 @@ numbers[-3:] # Gives [7, 8, 9]
 
 ```
 
-#### Modifying Lists
+### Modifying Lists
 ```python
 # Changing an element
 fruits[1] = "blueberry"  # ["apple", "blueberry", "cherry"]
@@ -229,7 +230,7 @@ del fruits[1]  # ["apple", "cherry"]
 
 ```
 
-#### List Operations
+### List Operations
 ```python
 # Length of a list
 length = len(fruits)  # 2
@@ -242,7 +243,7 @@ repeated_fruits = fruits * 2  # ["apple", "cherry", "apple", "cherry"]
 
 ```
 
-#### List Methods
+### List Methods
 ```python
 # Count occurrences of an element
 count_cherries = fruits.count("cherry")  # 1
@@ -258,7 +259,7 @@ fruits.sort()  # ["apple", "cherry"]
 
 ```
 
-#### Iterating Through Lists
+### Iterating Through Lists
 ```python
 # Using a for loop
 for fruit in fruits:
@@ -269,7 +270,7 @@ uppercase_fruits = [fruit.upper() for fruit in fruits]  # ["APPLE", "CHERRY"]
 
 ```
 
-#### Copying Lists
+### Copying Lists
 ```python
 # Shallow copy
 copy_fruits = fruits.copy()
@@ -282,7 +283,7 @@ copy_fruits = list(fruits)
 
 ```
 
-#### Important List Functions
+### Important List Functions
 ```python
 # Checking membership
 is_apple_in_list = "apple" in fruits  # True
@@ -298,7 +299,7 @@ total = sum(numbers)  # 150
 
 ```
 
-#### Nested Lists
+### Nested Lists
 ```python
 # dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
 
@@ -311,14 +312,14 @@ print(dirty_dozen)
 # [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
 ```
 
-### Dictonaries
+## Dictonaries
 
 - Key-Value Pairs: Dictionaries store data in key-value pairs. Each key is unique and maps to a value.
 - Unordered (until Python 3.7): The items are not stored in a specific order. (Note: As of Python 3.7, dictionaries maintain insertion order, but this is considered an implementation detail.)
 - Mutable: You can change, add, or remove key-value pairs after the dictionary is created.
 - No Duplicate Keys: Each key must be unique, but values can be duplicated.
 
-#### Creating a Dictionary
+### Creating a Dictionary
 ```python
 # Empty dictionary
 my_dict = {}
@@ -331,7 +332,7 @@ my_dict = {
 }
 
 ```
-#### Accessing Values
+### Accessing Values
 ```python
 # Accessing a value by key
 value = my_dict['key1']  # returns 'value1'
@@ -344,7 +345,7 @@ value = my_dict.get('nonexistent_key')  # returns None
 value = my_dict.get('nonexistent_key', 'default_value')  # returns 'default_value'
 
 ```
-#### Adding or Updating Values
+### Adding or Updating Values
 ```python
 # Adding a new key-value pair
 my_dict['new_key'] = 'new_value'
@@ -353,7 +354,7 @@ my_dict['new_key'] = 'new_value'
 my_dict['key1'] = 'updated_value1'
 
 ```
-#### Removing Key-Value Pairs
+### Removing Key-Value Pairs
 ```python
 # Using `del` to remove a key-value pair
 del my_dict['key1']
@@ -365,7 +366,7 @@ value = my_dict.pop('key2')  # returns 'value2'
 key, value = my_dict.popitem()  # returns a tuple (key, value)
 
 ```
-#### Checking for Keys
+### Checking for Keys
 ```python
 # Check if a key exists in the dictionary
 exists = 'key1' in my_dict  # returns True or False
@@ -374,7 +375,7 @@ exists = 'key1' in my_dict  # returns True or False
 not_exists = 'nonexistent_key' not in my_dict  # returns True or False
 
 ```
-#### Iterating Over Dictionaries
+### Iterating Over Dictionaries
 ```python
 # Iterating over keys
 for key in my_dict:
@@ -389,7 +390,7 @@ for key, value in my_dict.items():
     print(f'Key: {key}, Value: {value}')
 
 ```
-#### Merging Dictionaries
+### Merging Dictionaries
 ```python
 # Using the `update` method
 dict1 = {'a': 1, 'b': 2}
@@ -401,14 +402,14 @@ dict1 = {**dict1, **dict2}  # dict1 is now {'a': 1, 'b': 3, 'c': 4}
 
 ```
 
-### Sets
+## Sets
 
 - Unordered: Sets do not maintain any order of elements.
 - Unindexed: You cannot access items in a set by referring to an index.
 - Mutable: You can add or remove items, but you cannot change an existing item (although the set itself is mutable).
 - No Duplicates: Sets do not allow duplicate items. Each item must be unique.
 
-#### Basics
+### Basics
 ```python
 # Sets are like Lists, but they are unordered and they guarantee uniqueness. Only ONE of each value can be in a set.
 fruits = {'apple', 'banana', 'grape'}
@@ -420,7 +421,7 @@ print(fruits)
 
 ```
 
-#### Add Values
+### Add Values
 ```python
 fruits = {'apple', 'banana', 'grape'}
 fruits.add('pear')
@@ -428,7 +429,7 @@ print(fruits)
 # Prints: {'banana', 'grape', 'pear', 'apple'}
 ```
 
-#### Empty Set
+### Empty Set
 ```python
 # Because the empty bracket {} syntax creates an empty dictionary, to create an empty set, you need to use the set() function.
 
@@ -439,7 +440,7 @@ print(fruits)
 
 ```
 
-#### Iterating Over Values in a Set
+### Iterating Over Values in a Set
 ```python
 fruits = {'apple', 'banana', 'grape'}
 for fruit in fruits:
@@ -451,7 +452,7 @@ for fruit in fruits:
 
 ```
 
-#### Removing Values
+### Removing Values
 ```python
 fruits = {'apple', 'banana', 'grape'}
 fruits.remove('apple')

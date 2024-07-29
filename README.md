@@ -301,6 +301,7 @@ total = sum(numbers)  # 150
 
 ### Nested Lists
 ```python
+# Nesting Lists in Lists
 # dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
 
 fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"] 
@@ -310,6 +311,20 @@ dirty_dozen = [fruits, vegetables]
 
 print(dirty_dozen)
 # [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
+
+# Nesting Dictionaries in Lists
+travel_log = [
+    {
+        "country": "France",
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 12
+    },
+    {
+        "country": "Germany",
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+        "total_visits": 5
+    }, 
+]
 ```
 
 ## Dictonaries
@@ -400,6 +415,20 @@ dict1.update(dict2)  # dict1 is now {'a': 1, 'b': 3, 'c': 4}
 # Using the `**` operator (Python 3.5+)
 dict1 = {**dict1, **dict2}  # dict1 is now {'a': 1, 'b': 3, 'c': 4}
 
+```
+### Nesting in Dictionaries
+```python
+# Nesting Lists in Dictionaries
+travel_log = {
+  "France": ["Paris", "Lille", "Dijon"],
+  "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
+
+# Nesting Dictionaries in Dictionaries
+travel_log = {
+    "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12}
+    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 9}
+}
 ```
 
 ## Sets

@@ -5,6 +5,7 @@
 2. [Strings](#strings)
 3. [Numbers](#numbers)
 4. [Lists](#lists)
+5. [List Methods](#list-methods)
 
 
 ---
@@ -255,5 +256,78 @@ print(len(cars))
 ```
 ### Working With Lists
 ```python
-
+# Looping Through an Entire List
+fruits = ['apple','banana','cherry','pear','strawberry','orange']
+for fruit in fruits:
+    print(fruit)
+# Output = will list each fruit on an individual line
 ```
+
+
+
+
+## List Methods
+```python
+# Used for adding elements to the end of the List. 
+append()
+# Syntax: list.append(element)
+
+# It returns a shallow copy of a list
+copy()
+
+# This method is used for removing all items from the list.
+clear()
+
+# These methods count the elements.
+count()
+# Syntax: List.count(element)
+
+# Adds each element of an iterable to the end of the List
+extend()
+# Syntax: List1.extend(List2)
+
+# Returns the index of the first occurrence. The start and end indexes are not necessary parameters. 
+index()
+# Syntax: List.index(element[,start[,end]])
+
+# Inserts a given element at a given index in a list.
+insert()
+# Syntax: list.insert(position, element)
+
+# Removes and returns the last value from the List or the given index value.
+pop()
+# Syntax: list.pop([index])
+
+# Removes a given object from the List.
+remove()
+# Syntax: list.remove(element)
+
+# Deletes an element from the list using it’s index.
+del
+# Syntax: del list.[index]
+
+# Reverses objects of the List in place.
+reverse()
+# Syntax: list. reverse()
+
+# Sort a List in ascending, descending, or user-defined order
+sort()
+# Syntax: list.sort([key,[Reverse_flag]])
+
+# Calculates the minimum of all the elements of the List
+min()
+# Syntax: min(iterable, *iterables[, key])
+
+# Calculates the maximum of all the elements of the List
+max()
+# Syntax: max(iterable, *iterables[, key])
+
+# Calculates the sum of all the elements of the List
+sum()
+# Syntax: sum(List)
+
+# Calculates the total length of the List.
+len()
+# Syntax: len(list_name)
+```
+

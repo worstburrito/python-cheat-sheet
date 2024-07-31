@@ -201,5 +201,45 @@ print(motorcycles)
 ```
 ### Organizing a List
 ```python
+# Sorting a List Permanently with sort() Method
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+# Output = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+# Output = ['audi', 'bmw', 'subaru', 'toyota']
+
+# Sorting in reverse
+cars.sort(reverse=True)
+print(cars)
+# Output = ['toyota', 'subaru', 'bmw', 'audi']
+
+# Sorting a List Temporarily with the sorted() Function
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+
+print("Here is the original list:")
+print(cars)
+
+print("Here is the sorted list:")
+print(sorted(cars))
+
+print("Here is the original list again:")
+print(cars)
+
+# Printing a List in Reverse Order (not reversed SORTED order)
+# (This is just the list printed BACKWARDS)
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.reverse()
+print(cars)
+# Output = ['subaru', 'toyota', 'audi', 'bmw']
+
+# Finding the Length of a List
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+
+print(len(cars))
+# Output = 4
+```
+### Working With Lists
+```python
 
 ```

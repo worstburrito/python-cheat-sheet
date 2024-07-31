@@ -261,10 +261,46 @@ fruits = ['apple','banana','cherry','pear','strawberry','orange']
 for fruit in fruits:
     print(fruit)
 # Output = will list each fruit on an individual line
+
+# Using the range() function
+for value in range(1, 5):
+    print(value)
+# Output = will list 1-4 on individual lines
+# You can also pass one agrument
+for value in range(6):
+    print(value)
+# Output = will start at 0 and end at 5
+
+# Using range() to make a list of numbers
+even_nums = list(range(2,11,2))
+print(even_nums)
+# Output = [2, 4, 6, 8, 10]
+
+# List of Square Nums example
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+# Output = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# Simple Statistics with a List of Nums
+digits = [1,2,3,4,5,6,7,8,9,0]
+print(min(digits))      # Output = 0
+print(max(digits))      # Output = 9
+print(sum(digits))      # Output = 45
+
+# List Comprehensions
+squares = [value**2 for value in range(1,11)]
+print(squares)
+# Output = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# The code above does the same as
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+# Output = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
-
-
-
 
 ## List Methods
 ```python
@@ -329,5 +365,9 @@ sum()
 # Calculates the total length of the List.
 len()
 # Syntax: len(list_name)
+
+# Returns a sequence of numbers, in a given range
+range()
+# Syntax: range(start, stop, step)
 ```
 

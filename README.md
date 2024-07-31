@@ -37,6 +37,7 @@ x, y, z = 1, 2, 3
 # Programmers use ALL CAPS vars to represent
 NEVER_CHANGES = 5000
 print(NEVER_CHANGES)
+# Output = 5000
 ```
 
 ## Strings
@@ -44,26 +45,37 @@ print(NEVER_CHANGES)
 # A string is a series of characters inside of quotes
 my_string = "This is a string!"
 print(my_string)
+# Output = This is a string!
 
 # You can change the case in strings with methods
 name = 'rachael pracht'
 print(f"This is the original string: {name}")
 print(f"This is the string with title case added: {name.title()}")
+# Output = This is the original string: rachael pracht
+# Output = This is the string with title case added: Rachael Pracht
+
 
 # You can also change the case to all UPPER case or all lower case
 new_string = "Here Is My Example"
 print(new_string.upper())
 print(new_string.lower())
+# Output = HERE IS MY EXAMPLE
+# Output = here is my example
 
 # You can add a tab to your text
 no_tab = "Python"
 add_tab = "\tPython"
 print(no_tab)
 print(add_tab)
+# Output = Python
+# Output =     Python
 
 # You can add a new line to your text
 add_line = "This text\nhas a new line"
 print(add_line)
+# Output =
+# This text
+# has a new line
 
 # You can strip spaces from strings
 enter_msg = input("Enter a string: ").strip()
@@ -77,6 +89,8 @@ a_url = "https://google.com"
 new_url = a_url.removeprefix("https://")
 print(a_url)
 print(new_url)
+# Output = https://google.com
+# Output = google.com
 
 ```
 
@@ -120,7 +134,7 @@ print(one_mil)
 ```python
 items = []
 
-bicycles = ["trek", "cannondale", "redline", "salsa", "specialized"]
+bicycles = ['trek', 'cannondale', 'redline', 'salsa', 'specialized']
 print(bicycles)
 # Output = ['trek', 'cannondale', 'redline', 'salsa', 'specialized']
 
@@ -144,7 +158,7 @@ print(message)
 ### Modifying, Adding, and Inserting Elements
 ```python
 # Modifying Elements
-motorcycles = ["honda", "yamaha", "suzuki"]
+motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 # Output = ['honda', 'yamaha', 'suzuki']
 

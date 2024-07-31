@@ -116,8 +116,90 @@ print(one_mil)
 - Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
 - Allows Duplicates: Lists can contain multiple occurrences of the same item.
 
-### Title
+### Creating a List & Accessing Elements
 ```python
+items = []
 
+bicycles = ["trek", "cannondale", "redline", "salsa", "specialized"]
+print(bicycles)
+# Output = ['trek', 'cannondale', 'redline', 'salsa', 'specialized']
+
+# You access list items by utilizing the index, which looks like bicycles[0]
+# Output: trek
+print(bicycles[0])
+
+# You can use string methods in lists
+print(bicycles[0].title())
+# Output: Trek
+
+# To find the last item of a list
+print(bicycles[-1])
+# Output: specialized
+
+# Using Individual Elements from Lists
+message = f"My first bicycle was a {bicycles[0].title()}."
+print(message)
+# Output = My first bicycle was a Trek.
+```
+### Modifying, Adding, and Inserting Elements
+```python
+# Modifying Elements
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles)
+# Output = ['honda', 'yamaha', 'suzuki']
+
+motorcycles[0] = "ducati"
+print(motorcycles)
+Output = ['ducati', 'yamaha', 'suzuki']
+
+# Adding Elements
+motorcycles.append("honda")
+print(motorcycles)
+# Output = ['ducati', 'yamaha', 'suzuki', 'honda']
+
+# Adding Elements Using Inputs
+groceries = []
+groceries.append(input("Add grocery item: "))
+print(groceries)
+
+# Inserting Elements into a List
+motorcycles = ['ducati', 'yamaha', 'suzuki', 'honda']
+motorcycles.insert(0, 'harley')
+print(motorcycles)
+# Output = ['harley', 'ducati', 'yamaha', 'suzuki', 'honda']
+```
+### Removing Elements from a List
+```python
+# Using the del Statment
+motorcycles = ['harley', 'ducati', 'yamaha', 'suzuki', 'honda']
+del motorcycles[0]
+print(motorcycles)
+# Output = ['ducati', 'yamaha', 'suzuki', 'honda']
+
+# Using the pop() Method
+motorcycles = ['harley', 'ducati', 'yamaha', 'suzuki', 'honda']
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+# Output = ['harley', 'ducati', 'yamaha', 'suzuki']
+print(popped_motorcycle)
+# Output = honda
+
+# Using the pop() method from Any Position in List
+motorcycles = ['harley', 'ducati', 'yamaha', 'suzuki', 'honda']
+first_owned = motorcycles.pop(0)
+print(f"The first motorcycle I owned was a {first_owned.title()}.")
+# Output = The first motorcycle I owned was a Harley.
+
+# Removing an Item by Value
+motorcycles = ['ducati', 'yamaha', 'suzuki', 'honda']
+print(motorcycles)
+# Output = ['ducati', 'yamaha', 'suzuki', 'honda']
+
+motorcycles.remove('ducati')
+print(motorcycles)
+# Output = ['yamaha', 'suzuki', 'honda']
+```
+### Organizing a List
+```python
 
 ```

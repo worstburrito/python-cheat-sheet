@@ -524,5 +524,66 @@ if user not in banned_users:
 ```
 ### Simple If Statements
 ```python
+# Simple if Statements
+age = 19
+if age >= 18:
+    print("You can vote!")
+# Output = You can vote!
+
+# if-else Statements
+age = 17
+if age >= 18:
+    print("You can vote!")
+else:
+    print("You cannot vote.")
+# Output = You cannot vote.
+
+# if-elif-else Statements
+age = int(input("Enter your age: "))
+
+if age <= 4:
+    cost = 0
+elif 4 < age < 18:
+    cost = 25
+else:
+    cost = 40
+
+print(f"Your admission costs: ${cost}")
+# Input = 4, Output = Your admission costs: $0
+# Input = 12, Output = Your admission costs: $25
+
+# You do not need to include an else block
+# if it makes more sense to just use elif
+age = int(input("Enter your age: "))
+
+if age < 4:
+    cost = 0
+elif age < 18:
+    cost = 25
+elif age < 65:
+    cost = 40
+elif age >= 65:
+    cost = 20
+
+print(f"Your admission costs: ${cost}")
+# Input = 3, Output = Your admission costs: $0
+# Input = 67, Output = Your admission costs: $20
+
+# Testing Multiple Conditions
+requested_toppings = ['mushrooms', 'extra cheese']
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms...")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni...")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese...")
+print("Your pizza is ready!")
+# Output = Adding mushrooms...
+# Adding extra cheese...
+# Your pizza is ready!
+
+# If you only want one block of code to run, use if-elif-else
+# If you want more than one block of code to run, use independent if statements
 
 ```

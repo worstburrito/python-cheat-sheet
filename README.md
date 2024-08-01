@@ -8,6 +8,7 @@
 5. [List Methods](#list-methods)
 6. [Tuples](#tuples)
 7. [If Statements](#if-statements)
+8. [Dictonaries](#dictionaries)
 
 
 ---
@@ -585,5 +586,62 @@ print("Your pizza is ready!")
 
 # If you only want one block of code to run, use if-elif-else
 # If you want more than one block of code to run, use independent if statements
+```
+### Using if Statements with Lists
+```python
+# Checking for Special Items
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    print(f"Adding {requested_topping} to your pizza!")
+print("Your pizza is ready.")
+# Output = Adding mushrooms to your pizza!
+# Adding green peppers to your pizza!
+# Adding extra cheese to your pizza!
+# Your pizza is ready.
+
+# Using an if Statement in the Above Example
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("Sorry, we are out of green peppers.")
+    else:
+        print(f"Adding {requested_topping} to your pizza!")
+print("Your pizza is ready.")
+# Output = Adding mushrooms to your pizza!
+# Sorry, we are out of green peppers.
+# Adding extra cheese to your pizza!
+# Your pizza is ready.
+
+# Checking That a List is Not Empty
+requested_toppings = []
+
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"Adding {requested_topping} to your pizza!")
+    print("Finished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?")
+# Output = Are you sure you want a plain pizza?
+
+# Using Multiple Lists
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+                      'extra cheese', 'pepperoni', 'pineapple']
+
+requested_toppings = ['mushrooms', 'french fries', 'green peppers',]
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"Adding {requested_topping} to your pizza!")
+    else:
+        print(f"Sorry, we don't have {requested_topping}.")
+
+print("Finished making your pizza!")
+# Output = Adding mushrooms to your pizza!
+# Sorry, we don't have french fries.
+# Adding green peppers to your pizza!
+# Finished making your pizza!
+```
+## Dictionaries
+```python
 
 ```

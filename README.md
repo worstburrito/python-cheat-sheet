@@ -508,4 +508,21 @@ print((age1 >= 21) or (age2 >= 21))
 age1 = 18
 print((age1 >= 21) or (age2 >= 21))
 # Output = False
+
+# Checking if a Value is or is NOT in a list
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+print('mushrooms' in requested_toppings)
+# Output = True
+print('pepperoni' in requested_toppings)
+# Output = False
+
+banned_users = ['susan', 'chad', 'stacy']
+user = 'marie'
+if user not in banned_users:
+    print(f"{user.title()}, you can post a response if you wish!")
+# Output = Marie, you can post a response if you wish!
+```
+### Simple If Statements
+```python
+
 ```

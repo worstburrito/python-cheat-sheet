@@ -6,10 +6,10 @@
 3. [Numbers](#numbers)
 4. [Lists](#lists)
 5. [List Methods](#list-methods)
+6. [Tuples](#tuples)
 
 
 ---
-
 ## Variables
 ```python
 # Variables are labels you can assign and reassign values to
@@ -40,7 +40,6 @@ NEVER_CHANGES = 5000
 print(NEVER_CHANGES)
 # Output = 5000
 ```
-
 ## Strings
 ```python
 # A string is a series of characters inside of quotes
@@ -92,9 +91,7 @@ print(a_url)
 print(new_url)
 # Output = https://google.com
 # Output = google.com
-
 ```
-
 ## Numbers
 ```python
 # Integers
@@ -121,11 +118,8 @@ print(result)
 # Makes large numbers easier to read
 one_mil = 1_000_000
 print(one_mil)
-
 ```
-
 ## Lists
-
 - Ordered: The items in a list have a defined order, and this order will not change unless explicitly changed by methods like sort().
 - Indexed: Items in a list can be accessed by their position (index).
 - Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
@@ -341,7 +335,6 @@ favorite_fruits.remove('pear')
 favorite_fruits.append('watermelon')
 print(favorite_fruits)
 # Output = ['banana', 'cherry', 'strawberry', 'orange', 'watermelon']
-
 ```
 
 ## List Methods
@@ -412,4 +405,39 @@ len()
 range()
 # Syntax: range(start, stop, step)
 ```
+## Tuples
+- Tuples are immutable, meaning once they are created, you cannot alter their content. You cannot add, remove, or change elements.
+- Tuples are defined using parentheses ().
+```python
+# Defining a Tuple
+# Tuple are good for storing values that should
+# not change.
+dimensions = (200,50)
+print(dimensions[0])
+# Output = 200
+print(dimensions[1])
+# Output = 50
 
+# Looping Through all Values in a Tuple
+for dimension in dimensions:
+    print(dimension)
+# Output = 200
+# 50
+
+# Writing Over a Tuple
+dimensions = (200,50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+# Output = Original dimensions:
+# 200
+# 50
+
+dimensions = (400,100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+# Output = Modified dimensions:
+# 400
+# 100
+```

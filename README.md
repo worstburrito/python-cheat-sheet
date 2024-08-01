@@ -7,6 +7,7 @@
 4. [Lists](#lists)
 5. [List Methods](#list-methods)
 6. [Tuples](#tuples)
+7. [If Statements](#if-statements)
 
 
 ---
@@ -440,4 +441,71 @@ for dimension in dimensions:
 # Output = Modified dimensions:
 # 400
 # 100
+```
+## If Statements
+### Comparisons
+```python
+# A Simple Example
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+# Output = Audi
+# BMW
+# Subaru
+# Toyota
+
+# A note: '=' is an assignment while '==' is a comparison
+car = 'Audi'
+print(car == 'Audi')
+# Output = True
+print(car == 'BMW')
+# Output = False
+
+# Comparisons are case-sensitive
+car = 'Audi'
+print(car == 'audi')
+# Output = False
+print(car.lower() == 'audi')
+# Output = True
+
+# Checking for Inequality using !=
+requested_topping = 'mushrooms'
+if requested_topping != 'anchovies':
+    print("Hold the anchovies!")
+# Output = Hold the anchovies!
+
+# Mathematical Comparisons
+age = 18
+print(age < 21)
+# Output = True
+print(age > 21)
+# Output = False
+print(age <= 21)
+# Output = True
+print(age >= 21)
+# Output = False
+print(age != 21)
+# Output = True
+
+# Using 'and' to check Multiple Conditions
+age1 = 22
+age2 = 18
+print((age1 >= 21) and (age2 >= 21))
+# Output = False
+age2 = 22
+print((age1 >= 21) and (age2 >= 21))
+# Output = True
+
+# Using 'or' to check Multiple Conditions
+age1 = 22
+age2 = 18
+print((age1 >= 21) or (age2 >= 21))
+# Output = True
+age1 = 18
+print((age1 >= 21) or (age2 >= 21))
+# Output = False
 ```

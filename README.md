@@ -303,6 +303,44 @@ print(squares)
 ```
 ### Working With Parts of Lists
 ```python
+# Slicing a List
+fruits = ['apple','banana','cherry','pear','strawberry','orange']
+print(fruits[:3])
+# Output = ['apple', 'banana', 'cherry']
+
+# You only need a starting index if you want
+# To slice anything after index 0
+# Same for end, it will just go to the last element
+print(fruits[2:5])
+# Output = ['cherry', 'pear', 'strawberry']
+print(fruits[2:])
+# Output = ['cherry', 'pear', 'strawberry', 'orange']
+
+# A third value will 'step' similar to range functions
+print(fruits[::2])
+# Output = ['apple', 'cherry', 'strawberry']
+
+# Looping Through a Slice
+fruits = ['apple','banana','cherry','pear','strawberry','orange']
+print("Here are the last 3 fruits on my list:")
+for fruit in fruits[-3::]:
+    print(fruit)
+# Output = Here are the last 3 fruits on my list:
+# pear
+# strawberry
+# orange
+
+# Copying a List
+fruits = ['apple','banana','cherry','pear','strawberry','orange']
+favorite_fruits = fruits[:]
+print(favorite_fruits)
+# Output = ['apple', 'banana', 'cherry', 'pear', 'strawberry', 'orange']
+
+favorite_fruits.remove('apple')
+favorite_fruits.remove('pear')
+favorite_fruits.append('watermelon')
+print(favorite_fruits)
+# Output = ['banana', 'cherry', 'strawberry', 'orange', 'watermelon']
 
 ```
 

@@ -786,4 +786,9 @@ values()
 # you can include new data or merge it with existing dictionary entries
 update()
 # Syntax: my_dict1.update(my_dict2)
+
+# Python any() function returns True if any of the elements of a
+# given iterable( List, Dictionary, Tuple, set, etc) are True else it returns False.
+any()
+# Syntax: any(iterable)
 ```

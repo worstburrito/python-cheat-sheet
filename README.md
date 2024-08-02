@@ -11,7 +11,7 @@
 8. [Dictonaries](#dictionaries)
 9. [Dictionary Methods](#dictionary-methods)
 10. [Nesting](#nesting)
-11. [User Input & While Loops](#user-input-while-loops)
+11. [User Input & While Loops](#user-input--while-loops)
 
 
 ---

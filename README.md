@@ -1132,5 +1132,56 @@ while current_number < 10:
 ```
 ### Using a while Loop with Lists and Dictionaries
 ```python
+# Moving Items from One List to Another
+
+# Start with users that need to be verified,
+# and an empty list to hold confirmed users.
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
+
+# Verify each user until there are no more unconfirmed users.
+# Move each verified user into the list of confirmed users.
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+
+    print(f"Verifying user {current_user.title()}...")
+    confirmed_users.append(current_user)
+
+# Display all confirmed users.
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(f"✓ {confirmed_user.title()}")
+
+# Removing All Instances of Specific Values from a List
+pets = ['dog', 'cat', 'mouse', 'rabbit', 'cat', 'goldfish', 'cat']
+print(pets)
+
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
+
+# Filling a Dictionary with User Input
+
+responses = {}
+# Set a flag to indicate that polling is active.
+polling_active = True
+while polling_active:
+    # Prompt for the person's name an response.
+    name = input("\nWhat is your name? ")
+    response = input("\nWhat is your favorite programming language? ")
+
+    # Store the response in the dictionary.
+    responses[name] = response
+
+    # Find out if anyone else is giong to take the poll.
+    repeat = input("\nWould you like to let another person respond? (yes/no) ")
+    if repeat == 'no':
+        polling_active = False
+
+# Polling is complete. Show the results.
+print("\n--- Poll Results ---")
+for name, response in responses.items():
+    print(f"{name}'s favorite programming language is {response}.")
 
 ```

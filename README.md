@@ -806,6 +806,39 @@ if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
 # Output = Erin, please take our poll!
 
+# Looping Through a Dictionaries Keys in a Particular Order
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+# Output = Edward, thank you for taking the poll.
+# Jen, thank you for taking the poll.
+# Phil, thank you for taking the poll.
+# Sarah, thank you for taking the poll.
+
+# Looping Through All Values in a Dictionary
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+# Output = The following languages have been mentioned:
+# Python
+# C
+# Ruby
+# Python
+
+# Using a Set to See Values Without Repetition
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+# Output = The following languages have been mentioned:
+# Ruby
+# Python
+# C
 ```
 ## Dictionary Methods
 ```python

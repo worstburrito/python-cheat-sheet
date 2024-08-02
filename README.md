@@ -948,4 +948,25 @@ print(f"Total number of aliens: {len(aliens)}")
 # {'color': 'green', 'points': 5, 'speed': 'slow'}
 # ...
 # Total number of aliens: 30
+
+# A List in a Dictionary
+
+# Store information abougt a pizza being ordered.
+pizza = {
+    'crust': 'thick',
+    'toppings': ['sausage', 'mushrooms', 'extra cheese'],
+}
+
+# Summarize the order.
+print(f"You ordered a {pizza['crust']}-crust pizza "
+      "with the following toppings:")
+
+for topping in pizza['toppings']:
+    print(f"\t{topping}")
+    
+# Output = 
+# You ordered a thick-crust pizza with the following toppings:
+# 	sausage
+# 	mushrooms
+# 	extra cheese
 ```

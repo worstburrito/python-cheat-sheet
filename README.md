@@ -1000,4 +1000,36 @@ for name, languages in favorite_languages.items():
 # 	Python
 # 	Haskell
 
+# A Dictionary in a Dictionary
+
+users = {
+    'worstburrito': {
+        'first': 'rachael',
+        'last': 'pracht',
+        'location': 'iowa',
+    },
+    'philmbuff': {
+        'first': 'phil',
+        'last': 'pracht',
+        'location': 'iowa',
+    }
+}
+
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+
+    print(f"\tFull name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")
+
+# Output =
+# Username: worstburrito
+# 	Full name: Rachael Pracht
+# 	Location: Iowa
+# 
+# Username: philmbuff
+# 	Full name: Phil Pracht
+# 	Location: Iowa
+
 ```

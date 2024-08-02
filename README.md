@@ -9,6 +9,7 @@
 6. [Tuples](#tuples)
 7. [If Statements](#if-statements)
 8. [Dictonaries](#dictionaries)
+9. [Dictionary Methods](#dictionary-methods)
 
 
 ---
@@ -655,5 +656,134 @@ print(alien1['points'])
 ```
 ### Working With Dictionaries
 ```python
+# Accessing Values in a Dictionary
+alien1 = {'color': 'green'}
+print(alien1['color'])
+# Output = green
 
+alien2 = {'color': 'blue', 'points': 10}
+pts_earned = alien2['points']
+print(f"You earned {pts_earned} points!")
+# Output = You earned 10 points!
+
+# Adding New Key-Value Pairs
+alien1 = {'color': 'green', 'points': 5}
+print(alien1)
+# Output = {'color': 'green', 'points': 5}
+
+alien1['x-position'] = 0
+alien1['y-position'] = 25
+print(alien1)
+# Output = {'color': 'green', 'points': 5, 'x-position': 0, 'y-position': 25}
+
+# Starting with an Empty Dictionary
+alien1 = {}
+
+alien1['color'] = 'green'
+alien1['points'] = 5
+print(alien1)
+# Output = {'color': 'green', 'points': 5}
+
+# Modifying Values in a Dictionary
+alien1 = {'color': 'green'}
+print(f"The alien is {alien1['color']}.")
+# Output = The alien is green.
+
+alien1['color'] = 'yellow'
+print(f"The alien is now {alien1['color']}.")
+# Output = The alien is now yellow.
+
+# A more interesting example of this...
+alien_0 = {'x-pos': 0, 'y-pos': 25, 'speed': 'medium'}
+print(f"Original position: {alien_0['x-pos']}")
+
+# Move the alien to the right.
+# Determine how far to move the alien based on its current speed.
+if alien_0['speed'] == 'slow':
+    x_incr = 1
+elif alien_0['speed'] == 'medium':
+    x_incr = 2
+else: # This must be a fast alien
+    x_incr = 3
+
+# The new position is the position plus the increment
+alien_0['x-pos'] = alien_0['x-pos'] + x_incr
+print(f"New position: {alien_0['x-pos']}")
+# Output = Original position: 0
+# New position: 2
+
+# Removing Key-Value Pairs
+alien1 = {'color': 'green', 'points': 5}
+print(alien1)
+# Output = {'color': 'green', 'points': 5}
+
+del alien1['points']
+print(alien1)
+# Output = {'color': 'green'}
+
+# You can use a dictionary to:
+# Store many kinds of information about one object OR
+# one kind of information about many objects.
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+
+}
+
+language = favorite_languages['sarah'].title()
+print(f"Sarah's favorite language is {language}.")
+# Output = Sarah's favorite language is C.
+
+# Using get() to Access Values
+alien_0 = {'color': 'green', 'speed': 'slow'}
+point_value = alien_0.get('points', 'No point value assigned.')
+print(point_value)
+# Output = No point value assigned.
+```
+## Dictionary Methods
+```python
+# Removes all items from the dictionary
+clear()
+# Syntax: my_dict.clear()
+
+# Returns a shallow copy of the dictionary
+copy()
+
+# Creates a dictionary from the given sequence
+fromkeys()
+
+# Returns the value for the given key
+get()
+# Syntax: print(my_dict.get('Name'))
+
+# Return the list with all dictionary keys with values
+items()
+# Syntax: print(list(my_dict.items())[1][0])
+
+# Returns a view object that displays a list of all the keys in the dictionary in order of insertion
+keys()
+# Syntax: print(list(my_dict.keys()))
+
+# Returns and removes the element with the given key
+pop()
+# Syntax: my_dict.pop('Age')
+
+# Returns and removes the key-value pair from the dictionary
+popitem()
+# Syntax: my_dict.popitem()
+
+# Returns the value of a key if the key is in the dictionary else inserts the key with a value to the dictionary
+setdefault()
+
+# Returns a view object containing all dictionary values, which can be accessed and iterated through efficiently
+values()
+# Syntax: print(list(my_dict.values()))
+
+# Updates the dictionary with the elements from another dictionary or an iterable of key-value pairs. With this method,
+# you can include new data or merge it with existing dictionary entries
+update()
+# Syntax: my_dict1.update(my_dict2)
 ```

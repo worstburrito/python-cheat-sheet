@@ -1184,4 +1184,23 @@ print("\n--- Poll Results ---")
 for name, response in responses.items():
     print(f"{name}'s favorite programming language is {response}.")
 
+# Rachael's Sandwich Ordering Program
+sandwich_orders = {}
+
+order_active = True
+while order_active:
+    name = input("Enter your name: ")
+    sandwich_type = input('Choose a sandwich type: Ham, Turkey, Tuna ')
+    bread_type = input('Choose a bread type: White, Wheat, Rye ')
+
+    sandwich_orders[name] = (sandwich_type, bread_type)
+
+    repeat = input('\nWould you like to let another person order? yes/no ')
+    if repeat == 'no':
+        order_active = False
+
+print("\n--- Sandwich Orders ---")
+for name, (sandwich_type, bread_type) in sandwich_orders.items():
+    print(f"{name} ordered a {sandwich_type} sandwich on {bread_type}.")
+
 ```

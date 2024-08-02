@@ -1076,5 +1076,37 @@ print(message)
 ```
 ### While Loops
 ```python
+# The while Loop in Action
+current_num = 1
+while current_num <= 5:
+    print(current_num)
+    current_num += 1
+# Output = 1
+# 2
+# 3
+# 4
+# 5
+
+# Letting the User Choose When to Quit
+prompt = "\nTell me something, and I will repeat it back to you."
+prompt += "\nEnter 'quit' to end the program: "
+
+message = ""
+while message != "quit":
+    message = input(prompt)
+    if message != "quit":
+        print(message)
+
+# Using a Flag
+prompt = "\nTell me something, and I will repeat it back to you."
+prompt += "\nEnter 'quit' to end the program: "
+
+active = True # This is the flag
+while active:
+    message = input(prompt)
+    if message == 'quit':
+        active = False # This is the flag
+    else:
+        print(message)
 
 ```

@@ -10,6 +10,7 @@
 7. [If Statements](#if-statements)
 8. [Dictonaries](#dictionaries)
 9. [Dictionary Methods](#dictionary-methods)
+10. [Nesting](#nesting)
 
 
 ---
@@ -888,4 +889,63 @@ update()
 # given iterable( List, Dictionary, Tuple, set, etc) are True else it returns False.
 any()
 # Syntax: any(iterable)
+```
+## Nesting
+- You can store multiple dictionaries in a list
+- You can store a list or lists in a dictionary
+- You can store a dictionary in a dictionary
+```python
+# A List of Dictionaries
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+# Output = {'color': 'green', 'points': 5}
+# {'color': 'yellow', 'points': 10}
+# {'color': 'red', 'points': 15}
+
+# Create a Fleet of 30 Aliens (cool, lol)
+# Make an empty list for storing our aliens
+aliens = []
+
+# Make 30 green aliens.
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# Change the first 3 aliens to a new color and speed
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# Show the first 5 aliens.
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# Show how many aliens have been created.
+print(f"Total number of aliens: {len(aliens)}")
+
+# Output = {'color': 'green', 'points': 5, 'speed': 'slow'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# ...
+# Total number of aliens: 30
+
+# Output after we change the first 3 aliens to yellow = 
+# {'color': 'yellow', 'points': 10, 'speed': 'medium'}
+# {'color': 'yellow', 'points': 10, 'speed': 'medium'}
+# {'color': 'yellow', 'points': 10, 'speed': 'medium'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# {'color': 'green', 'points': 5, 'speed': 'slow'}
+# ...
+# Total number of aliens: 30
 ```

@@ -1036,5 +1036,41 @@ for username, user_info in users.items():
 ```
 ## User Input & While Loops
 ```python
+# How the input() Function Works
+message = input("Tell me something, and I will repeat it back to you: ")
+print(message)
+# Output = Pancakes are awesome!
+
+# Writing Clear Prompts
+name = input("Please enter your name: ")
+print(f"Hello {name}!")
+
+prompt = "If you share your name, we can personalize the messages you see."
+prompt += "\nWhat is your first name? "
+
+name = input(prompt)
+print(f"Hello {name}!")
+
+# Using int() to Accept a Numeral Input
+age = int(input("How old are you? "))
+if age < 21:
+    print("You are not old enough to drink.")
+else:
+    print("You are old enough to drink.")
+
+# The Modulo Operator
+age = int(input("How old are you? "))
+if age % 2 == 0:
+    print("Your age is even.")
+else:
+    print("Your age is odd.")
+
+# Odd or Even Number
+number = int(input("Enter a number and I'll tell you if it's odd or even: "))
+if number % 2 == 0:
+    message = f"{number} is an even number."
+else:
+    message = f"{number} is an odd number."
+print(message)
 
 ```

@@ -1035,6 +1035,7 @@ for username, user_info in users.items():
 
 ```
 ## User Input & While Loops
+### User Input
 ```python
 # How the input() Function Works
 message = input("Tell me something, and I will repeat it back to you: ")
@@ -1072,5 +1073,8 @@ if number % 2 == 0:
 else:
     message = f"{number} is an odd number."
 print(message)
+```
+### While Loops
+```python
 
 ```

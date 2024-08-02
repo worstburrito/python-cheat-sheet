@@ -1109,4 +1109,28 @@ while active:
     else:
         print(message)
 
+# Using break to Exit a Loop
+prompt = "\nPlease enter the name of a city you have visited: "
+prompt += "\n(Enter 'quit' when you are finished.) "
+
+while True:
+    city = input(prompt)
+
+    if city == 'quit':
+        break
+    else:
+        print(f"I'd love to go to {city.title()}!")
+
+# Using continue in a Loop
+current_number = 0
+while current_number < 10:
+    current_number += 1
+    if current_number % 2 == 0:
+        continue # This skips the rest of the loop and returns to the top of the loop
+
+    print(current_number)
+```
+### Using a while Loop with Lists and Dictionaries
+```python
+
 ```

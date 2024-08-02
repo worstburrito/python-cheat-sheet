@@ -11,6 +11,7 @@
 8. [Dictonaries](#dictionaries)
 9. [Dictionary Methods](#dictionary-methods)
 10. [Nesting](#nesting)
+11. [User Input & While Loops](#user-input-while-loops)
 
 
 ---
@@ -1031,5 +1032,9 @@ for username, user_info in users.items():
 # Username: philmbuff
 # 	Full name: Phil Pracht
 # 	Location: Iowa
+
+```
+## User Input & While Loops
+```python
 
 ```

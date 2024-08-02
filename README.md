@@ -743,6 +743,70 @@ point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
 # Output = No point value assigned.
 ```
+### Looping Through Dictionaries
+```python
+# Looping Through All Key-Value Pairs
+user_0 = {
+    'username': 'worstburrito',
+    'first': 'rachael',
+    'last': 'pracht',
+}
+
+for key, value in user_0.items():
+    print(f'{key.title()}: {value.title()}')
+# Output = Username: Worstburrito
+# First: Rachael
+# Last: Pracht
+
+# Another Example
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite language is {language.title()}.")
+# Output = Jen's favorite language is Python.
+# Sarah's favorite language is C.
+# Edward's favorite language is Ruby.
+# Phil's favorite language is Python.
+
+# Looping Through All the Keys in a Dictionary
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+for name in favorite_languages.keys():
+    print(name.title())
+# Output = Jen
+# Sarah
+# Edward
+# Phil
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(f"Hi {name.title()}.")
+
+    if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}.")
+# Output = Hi Jen.
+# Hi Sarah.
+# 	Sarah, I see you love C.
+# Hi Edward.
+# Hi Phil.
+# 	Phil, I see you love Python.
+
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
+# Output = Erin, please take our poll!
+
+```
 ## Dictionary Methods
 ```python
 # Removes all items from the dictionary

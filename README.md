@@ -1268,5 +1268,42 @@ describe_pet(animal_type=animal_type_input, pet_name=pet_name_input)
 # If you're using keyword arguments, you just have to match the 
 # right keyword with the right piece of data.
 
+# Default Values
+def describe_pet(pet_name, animal_type='dog'):
+    """Display information about a pet"""
+    print(f"I have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+
+describe_pet(pet_name='wanda', animal_type='fish')
+# Output = I have a fish.
+# My fish's name is Wanda.
+
+describe_pet('cesar')
+# Output = I have a dog.
+# My dog's name is Cesar.
+
+# Equivalent Function Calls
+def describe_pet(pet_name, animal_type='dog'):
+    """Display information about a pet"""
+    print(f"I have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+
+# A dog named Willie.
+describe_pet('willie')
+# Output = I have a dog.
+# My dog's name is Willie.
+
+# A hamster named Harry.
+describe_pet('harry', 'hamster')
+describe_pet(pet_name='harry', animal_type='hamster')
+describe_pet(animal_type='hamster', pet_name='harry')
+# Output = I have a hamster.
+# My hamster's name is Harry.
+```
+### Return Values
+```python
+
 
 ```

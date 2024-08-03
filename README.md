@@ -12,6 +12,7 @@
 9. [Dictionary Methods](#dictionary-methods)
 10. [Nesting](#nesting)
 11. [User Input & While Loops](#user-input--while-loops)
+12. [Functions](#functions)
 
 
 ---
@@ -1202,5 +1203,70 @@ while order_active:
 print("\n--- Sandwich Orders ---")
 for name, (sandwich_type, bread_type) in sandwich_orders.items():
     print(f"{name} ordered a {sandwich_type} sandwich on {bread_type}.")
+
+```
+## Functions
+```python
+# Defining a Function
+def greet_user():
+    """Display a simple greeting"""
+    print("Hello User!")
+
+
+greet_user()
+# Output = Hello User!
+
+# Passing information into a Function
+# Defining a Function
+def greet_user(name):
+    """Display a simple greeting"""
+    print(f"Hello {name.title()}!")
+
+
+greet_user('rachael')
+# # Output = Hello Rachael!
+
+greet_user('phil')
+# Output = Hello Phil!
+
+# Positional Arguments
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet"""
+    print(f"I have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}")
+
+
+describe_pet('fish', 'wanda')
+# Output = I have a fish.
+# My fish's name is Wanda
+
+# You can make multiple function calls...
+describe_pet('cat', 'olive')
+# Output = I have a cat.
+# My cat's name is Olive
+
+# Order matters in positional arguments...
+describe_pet('wanda', 'fish')
+# Output = I have a wanda.
+# My wanda's name is Fish
+
+# Keyword Arguments
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet"""
+    print(f"I have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}")
+
+
+animal_type_input = input("Enter your pet's animal type: ")
+pet_name_input = input("Enter your pet's name: ")
+
+describe_pet(animal_type=animal_type_input, pet_name=pet_name_input)
+# Output = I have a dog.
+# My dog's name is Cesar
+
+# If you're using positional arguments, order of arguments matters.
+# If you're using keyword arguments, you just have to match the 
+# right keyword with the right piece of data.
+
 
 ```

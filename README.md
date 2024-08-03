@@ -1040,6 +1040,9 @@ for username, user_info in users.items():
 
 ```
 ## User Input & While Loops
+- [User Input](#user-input)
+- [While Loops](#while-loops)
+- [Using a while Loop with Lists and Dictionaries](#using-a-while-loop-with-lists-and-dictionaries)
 ### User Input
 ```python
 # How the input() Function Works
@@ -1210,6 +1213,9 @@ for name, (sandwich_type, bread_type) in sandwich_orders.items():
 
 ```
 ## Functions
+- [Return Values](#return-values)
+- [Passing a List](#passing-a-list)
+- [Passing an Arbitaray Number of Arguments](#passing-an-arbitaray-number-of-arguments)
 ```python
 # Defining a Function
 def greet_user():

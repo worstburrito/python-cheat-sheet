@@ -414,8 +414,6 @@ range()
 # Syntax: range(start, stop, step)
 ```
 ## Tuples
-- Tuples are immutable, meaning once they are created, you cannot alter their content. You cannot add, remove, or change elements.
-- Tuples are defined using parentheses ().
 ```python
 # Defining a Tuple
 # Tuple are good for storing values that should
@@ -450,6 +448,9 @@ for dimension in dimensions:
 # 100
 ```
 ## If Statements
+- [Comparisons](#comparisons)
+- [Simple If Statements](#simple-if-statements)
+- [Using if Statements with Lists](#using-if-statements-with-lists)
 ### Comparisons
 ```python
 # A Simple Example

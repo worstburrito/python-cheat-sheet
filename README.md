@@ -649,9 +649,10 @@ print("Finished making your pizza!")
 # Finished making your pizza!
 ```
 ## Dictionaries
-- A dictionary is an unordered collection of key-value pairs.
-- Items are accessed by their key, not by position.
-- Mutable; you can add, remove, or change key-value pairs.
+- [Working With Dictionaries](working-with-dictionaries)
+- [Looping Through Dictionaries](#looping-through-dictionaries)
+- [Dictionary Methods](#dictionary-methods)
+- 
 ```python
 # A Simple Dictionary
 alien1 = {'color': 'green', 'points': 5}

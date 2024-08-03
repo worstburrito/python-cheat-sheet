@@ -131,6 +131,13 @@ print(one_mil)
 - Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
 - Allows Duplicates: Lists can contain multiple occurrences of the same item.
 
+- [Creating a List & Accessing Elements](#creating-a-list--accessing-elements)
+- [Modifying, Adding, and Inserting Elements](#modifying-adding-and-inserting-elements)
+- [Removing Elements from a List](#removing-elements-from-a-list)
+- [Organizing a List](#organizing-a-list)
+- [Working With Lists](#organizing-a-list)
+- [Working With Parts of Lists](#working-with-parts-of-lists)
+
 ### Creating a List & Accessing Elements
 ```python
 items = []

@@ -652,7 +652,7 @@ print("Finished making your pizza!")
 - [Working With Dictionaries](working-with-dictionaries)
 - [Looping Through Dictionaries](#looping-through-dictionaries)
 - [Dictionary Methods](#dictionary-methods)
-- 
+
 ```python
 # A Simple Dictionary
 alien1 = {'color': 'green', 'points': 5}

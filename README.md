@@ -1301,6 +1301,19 @@ describe_pet(pet_name='harry', animal_type='hamster')
 describe_pet(animal_type='hamster', pet_name='harry')
 # Output = I have a hamster.
 # My hamster's name is Harry.
+
+# Rachael's Custom T-shirt Example
+def custom_tshirt(size, message):
+    """Display t-shirt size and customization"""
+    print(f"T-shirt size: {size.upper()}")
+    print(f"Customization: {message.title()}")
+    print("Thank you for ordering a custom t-shirt!")
+
+
+tshirt_size = input("Enter t-shirt size (s/m/l/xl/xxl): ")
+tshirt_message = input("Enter custom message to apply to t-shirt: ")
+
+custom_tshirt(tshirt_size, tshirt_message)
 ```
 ### Return Values
 ```python

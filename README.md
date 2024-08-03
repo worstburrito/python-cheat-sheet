@@ -126,11 +126,6 @@ one_mil = 1_000_000
 print(one_mil)
 ```
 ## Lists
-- Ordered: The items in a list have a defined order, and this order will not change unless explicitly changed by methods like sort().
-- Indexed: Items in a list can be accessed by their position (index).
-- Mutable: Lists can be changed after their creation. Items can be added, removed, or changed.
-- Allows Duplicates: Lists can contain multiple occurrences of the same item.
-
 - [Creating a List & Accessing Elements](#creating-a-list--accessing-elements)
 - [Modifying, Adding, and Inserting Elements](#modifying-adding-and-inserting-elements)
 - [Removing Elements from a List](#removing-elements-from-a-list)

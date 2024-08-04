@@ -1553,10 +1553,10 @@ make_pizza(16, 'pepperoni')
 make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 ```
 ## Classes
-- [Working with Classes & Instances](#)
-- [Inheritance](#)
-- [Importing Classes](#)
-- [The Python Standard Library](#)
+- [Working with Classes & Instances](#working-with-classes--instances)
+- [Inheritance](#inheritance)
+- [Importing Classes](#importing-classes)
+- [The Python Standard Library](#the-python-standard-library)
 ```python
 ```
 ### Working with Classes & Instances

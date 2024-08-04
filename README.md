@@ -1474,8 +1474,42 @@ make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
 # The * in the parameter tells Python to make a 
 # tuple and contain all values passed into the function
+
+# Mixing Positional and Arbitrary Arguments
+def make_pizza(size, *toppings):
+    """Print the list of toppings that have been requested."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# The parameter that accepts an arbitrary number
+# of arguments must be placed last
+# You'll often see the generic parameter named *args,
+# which collects arbitrary positional arguments like this.
+
+# Using Arbitrary Keyword Arguments
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+
+user_profile = build_profile('albert', 'einstein',
+                             location='princeton',
+                             field='pysics')
+
+print(user_profile)
+
+# You'll often see the parameter name **kwargs used to
+# collect nonspecific keyword arguments.
 ```
-### Mixing Positional and Arbitrary Arguments
+### Storing Your Functions in Modules
 ```python
 
 ```
+

@@ -13,6 +13,7 @@
 10. [Nesting](#nesting)
 11. [User Input & While Loops](#user-input--while-loops)
 12. [Functions](#functions)
+13. [Classes](#classes)
 
 
 ---
@@ -1551,4 +1552,22 @@ from pizza import *
 make_pizza(16, 'pepperoni')
 make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 ```
-
+## Classes
+- [Working with Classes & Instances](#)
+- [Inheritance](#)
+- [Importing Classes](#)
+- [The Python Standard Library](#)
+```python
+```
+### Working with Classes & Instances
+```python
+```
+### Inheritance
+```python
+```
+### Importing Classes
+```python
+```
+### The Python Standard Library
+```python
+```

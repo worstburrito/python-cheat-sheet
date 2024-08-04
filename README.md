@@ -1216,6 +1216,7 @@ for name, (sandwich_type, bread_type) in sandwich_orders.items():
 - [Return Values](#return-values)
 - [Passing a List](#passing-a-list)
 - [Passing an Arbitaray Number of Arguments](#passing-an-arbitaray-number-of-arguments)
+- [Storing Your Functions in Modules](#storing-your-functions-in-modules)
 ```python
 # Defining a Function
 def greet_user():
@@ -1510,6 +1511,44 @@ print(user_profile)
 ```
 ### Storing Your Functions in Modules
 ```python
+# Importing an Entire Module
 
+# In the main file... (practice.py)
+import pizza
+
+pizza.make_pizza(16, 'pepperoni')
+pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# In the 'import pizza' file... (pizza.py)
+def make_pizza(size, *toppings):
+    """Print the list of toppings that have been requested."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+# Importing Specific Functions
+# Syntax: from module_name import function_name1, function_name2 (etc.)
+from pizza import make_pizza
+
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# Using 'as' to Give a Function an Alias
+
+from pizza import make_pizza as mp
+
+mp(16, 'pepperoni')
+mp(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# Using 'as' to Give a Module an Alias
+
+import pizza as p
+p.make_pizza(16, 'pepperoni')
+p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+# Importing All Functions in a Module
+from pizza import *
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 ```
 

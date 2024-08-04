@@ -1475,3 +1475,7 @@ make_pizza('mushrooms', 'green peppers', 'extra cheese')
 # The * in the parameter tells Python to make a 
 # tuple and contain all values passed into the function
 ```
+### Mixing Positional and Arbitrary Arguments
+```python
+
+```

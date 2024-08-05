@@ -1558,6 +1558,47 @@ make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 - [Importing Classes](#importing-classes)
 - [The Python Standard Library](#the-python-standard-library)
 ```python
+# Creating the Dog Class in dog.py
+class Dog:
+    """A simple attempt to model a dog."""
+
+    def __init__(self, name, age):
+        """Initialize name and age attributes."""
+        self.name = name
+        self.age = age
+
+    def sit(self):
+        """Simulate a dog sitting in response to a command."""
+        print(f"{self.name} is now sitting.")
+
+    def roll_over(self):
+        """Simulate a dog rolling over in response to a command."""
+        print(f"{self.name} is now rolling over.")
+
+
+# Making an Instance from a Class
+my_dog = Dog('Willie', 6)
+
+# Accessing Attributes, ie: my_dog.name
+print(f"My dog's name is {my_dog.name}.")
+print(f"My dog is {my_dog.age} years old.")
+# Output = My dog's name is Willie.
+# My dog is 6 years old
+
+# Calling Methods
+my_dog.sit()
+my_dog.roll_over()
+# Output = Willie is now sitting.
+# Willie is now rolling over.
+
+# Creating Multiple Instances
+your_dog = Dog('Lucy', 3)
+print(f"Your dog's name is {your_dog.name}.")
+print(f"Your dog is {your_dog.age} years old.")
+your_dog.sit()
+# Output = Your dog's name is Lucy.
+# Your dog is 3 years old.
+# Lucy is now sitting.
 ```
 ### Working with Classes & Instances
 ```python

@@ -1626,6 +1626,77 @@ my_restaurant.open_restaurant()
 ```
 ### Working with Classes & Instances
 ```python
+# The Car Class
+class Car:
+    """A simple attempt to represent a car."""
+
+    def __init__(self, make, model, year):
+        """Initialize attributes to make a car."""
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_descriptive_name(self):
+        """Return a neatly formatted descriptive name."""
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+
+    def read_odometer(self):
+        """Print a statement showing the car's mileage."""
+        print(f"This car has {self.odometer_reading} miles on it.")
+
+    def update_odometer(self, mileage):
+        """
+        Set the odometer reading to the given mileage.
+        Reject the change if it attempts to roll back the odometer reading.
+        """
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading."""
+        self.odometer_reading += miles
+
+
+my_new_car = Car("audi", "a4", "2024")
+print(my_new_car.get_descriptive_name())
+# Output = 2024 Audi A4
+
+# Setting a Default Value for an Attribute
+my_new_car.read_odometer()
+# Output = This car has 0 miles on it.
+
+# Modifying Attribute Values
+
+# Modifying an Attribute's Value Directly
+my_new_car.odometer_reading = 23
+my_new_car.read_odometer()
+# Output = This car has 23 miles on it.
+
+# Modifying an Attribute's Value Through a Method
+my_new_car.update_odometer(65)
+my_new_car.read_odometer()
+# Output = This car has 65 miles on it.
+
+# Attempting to "roll back" the odometer:
+my_new_car.update_odometer(15)
+# Output = You can't roll back an odometer!
+
+# Incrementing an Attribute's Value Through a Method
+my_used_car = Car("subaru", "outback", "2019")
+print(my_used_car.get_descriptive_name())
+# Output = 2019 Subaru Outback
+
+my_used_car.update_odometer(23_500)
+my_used_car.read_odometer()
+# Output = This car has 23500 miles on it.
+
+my_used_car.increment_odometer(100)
+my_used_car.read_odometer()
+# Output = This car has 23600 miles on it.
 ```
 ### Inheritance
 ```python

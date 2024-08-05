@@ -1599,6 +1599,30 @@ your_dog.sit()
 # Output = Your dog's name is Lucy.
 # Your dog is 3 years old.
 # Lucy is now sitting.
+
+# Try It Yourself Activity
+class Restaurant:
+    """Make a class called 'Restaurant' that takes two attributes"""
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    """Make a method called 'decribe_restaurant'"""
+    def describe_restaurant(self):
+        print(f"The restaurant name is {self.restaurant_name}.")
+        print(f"The cuisine type is {self.cuisine_type}.")
+
+    """Make a method called 'open_restaurant'"""
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} is now open!")
+
+
+my_restaurant = Restaurant("Verde", "Mexican")
+my_restaurant.describe_restaurant()
+my_restaurant.open_restaurant()
+# Output = The restaurant name is Verde.
+# The cuisine type is Mexican.
+# Verde is now open!
 ```
 ### Working with Classes & Instances
 ```python

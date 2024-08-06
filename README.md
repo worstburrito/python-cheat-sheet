@@ -1730,19 +1730,40 @@ class Car:
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
+
+class Battery:
+    """A simple attempt to represent a battery."""
+
+    def __init__(self, battery_size=40):
+        """Initialize attributes to describe battery."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
 
     def __init__(self, make, model, year):
-        """Initialize attributes of the parent class."""
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to an electric car.
+        """
         super().__init__(make, model, year)
+        self.battery = Battery()
 
 
 my_leaf = ElectricCar('nissan', 'leaf', '2024')
 print(my_leaf.get_descriptive_name())
 # Output = 2024 Nissan Leaf
 
-# Defining Attribute and Methods for the Child Class
+
+# Overriding Methods from the Parent Class
+my_leaf.battery.describe_battery()
+# Output = This car has a 40-kWh battery.
+
 
 ```
 ### Importing Classes

@@ -14,6 +14,7 @@
 11. [User Input & While Loops](#user-input--while-loops)
 12. [Functions](#functions)
 13. [Classes](#classes)
+14. [Files & Exceptions](#files--exceptions)
 
 
 ---
@@ -1862,3 +1863,23 @@ Resources for libraries:
 - https://docs.python.org/3/library/index.html
 - https://www.geeksforgeeks.org/libraries-in-python/
 - https://medium.com/@tobias.talaj/decoding-python-which-standard-library-components-do-you-really-need-to-know-3ae3541bb2be
+
+## Files & Exceptions
+- [Reading From a File](#reading-from-a-file)
+- [Writing to a File](#writing-to-a-file)
+- [Exceptions](#exceptions)
+- [Storing Data](#storing-data)
+
+### Reading from a File
+```python
+```
+### Writing to a File
+```python
+```
+### Exceptions
+```python
+```
+### Storing Data
+```python
+```
+

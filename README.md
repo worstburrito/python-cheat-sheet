@@ -1742,6 +1742,15 @@ class Battery:
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
+    def get_range(self):
+        """Print a statement showing the battery range."""
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
+
+        print(f"This car can go about {range} miles on a full charge.")
+
 
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
@@ -1759,12 +1768,11 @@ my_leaf = ElectricCar('nissan', 'leaf', '2024')
 print(my_leaf.get_descriptive_name())
 # Output = 2024 Nissan Leaf
 
-
 # Overriding Methods from the Parent Class
 my_leaf.battery.describe_battery()
 # Output = This car has a 40-kWh battery.
-
-
+my_leaf.battery.get_range()
+# Output = This car can go about 150 miles on a full charge.
 ```
 ### Importing Classes
 ```python

@@ -1858,5 +1858,7 @@ from electric_car import ElectricCar as ECar
 # and less room for spelling errors.
 ```
 ### The Python Standard Library
-```python
-```
+Resources for libraries:
+- https://docs.python.org/3/library/index.html
+- https://www.geeksforgeeks.org/libraries-in-python/
+- https://medium.com/@tobias.talaj/decoding-python-which-standard-library-components-do-you-really-need-to-know-3ae3541bb2be

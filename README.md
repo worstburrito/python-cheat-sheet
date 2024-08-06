@@ -1773,6 +1773,62 @@ my_leaf.battery.describe_battery()
 # Output = This car has a 40-kWh battery.
 my_leaf.battery.get_range()
 # Output = This car can go about 150 miles on a full charge.
+
+# Try It Yourself Activity
+class Restaurant:
+    """Make a class called 'Restaurant' that takes two attributes"""
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+
+    def describe_restaurant(self):
+        """Make a method called 'describe_restaurant'"""
+        print(f"The restaurant name is {self.restaurant_name}.")
+        print(f"The cuisine type is {self.cuisine_type}.")
+
+    def open_restaurant(self):
+        """Make a method called 'open_restaurant'"""
+        print(f"{self.restaurant_name} is now open!")
+
+
+class Icecream(Restaurant):
+    """Write a class called Ice Cream Stand that inherits from Restaurant."""
+
+    def __init__(self, restaurant_name, cuisine_type):
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to Ice Cream Stand.
+        """
+        super().__init__(restaurant_name, cuisine_type)
+
+    def ice_cream_flavors(self):
+        flavors = [
+            'vanilla', 'chocolate', 'strawberry',
+            'black cherry', 'bubblegum'
+        ]
+        print("We offer the following flavors of ice cream:")
+        for flavor in flavors:
+            print(flavor)
+
+
+my_restaurant = Restaurant("Verde", "Mexican")
+my_restaurant.describe_restaurant()
+my_restaurant.open_restaurant()
+# Output = The restaurant name is Verde.
+# The cuisine type is Mexican.
+# Verde is now open!
+ice_cream_stand = Icecream("Whitey's", "Frozen Treats")
+ice_cream_stand.describe_restaurant()
+ice_cream_stand.ice_cream_flavors()
+# Output = The restaurant name is Whitey's.
+# The cuisine type is Frozen Treats.
+# We offer the following flavors of ice cream:
+# vanilla
+# chocolate
+# strawberry
+# black cherry
+# bubblegum
+
 ```
 ### Importing Classes
 ```python

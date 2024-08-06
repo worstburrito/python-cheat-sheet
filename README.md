@@ -1832,6 +1832,30 @@ ice_cream_stand.ice_cream_flavors()
 ```
 ### Importing Classes
 ```python
+# Step 1: Move all Classes, methods and functions from a single class into a single file.
+# Step 2: Update docstring to be Module level to describe the contents of the module.
+# Step 3: Create a new file and import the Car class using the following syntax:
+from car import Car
+
+# Step 4: Now you can add all your function calls to this shorter, simpler doc.
+# You can store as many classes as you need in a single module (if they are related).
+# You can import as many classes as you need into a program file:
+from car import Car, ElectricCar
+
+# You can also just import the entire module:
+import car
+
+# Best Practice: do not use...
+from module_name import *
+# This is because you cannot see what classes are being used easily.
+# You're better off importing the entire module and using...
+module_name.ClassName
+# syntax so others can read what is happening in your code.
+
+# You can also use alias which look like this:
+from electric_car import ElectricCar as ECar
+# This may make your code easier to type as there are  less chars
+# and less room for spelling errors.
 ```
 ### The Python Standard Library
 ```python

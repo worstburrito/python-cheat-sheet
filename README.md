@@ -1872,6 +1872,81 @@ Resources for libraries:
 
 ### Reading from a File
 ```python
+# Reading the Contents of a File
+from pathlib import Path
+
+path = Path('pi_digits.txt')
+contents = path.read_text()
+print(contents)
+# Output = 3.1415926535
+# 8979323846
+# 2643383279
+#
+
+# Removes the empty line at the end of the file contents
+contents = contents.rstrip()
+print(contents)
+# Output = 3.1415926535
+# 8979323846
+# 2643383279
+
+# You can add the rstrip here and save a line
+contents = path.read_text().rstrip()
+
+# Relative File Path
+path = Path('text_files/filename.txt')
+
+# Absolute File Path
+path = Path('/home/eric/data_files/text_file/filename.txt')
+
+from pathlib import Path
+
+path = Path('pi_digits.txt')
+# Contents
+contents = path.read_text().rstrip()
+
+# Accessing a File's Lines
+lines = contents.splitlines()
+for line in lines:
+    print(line)
+
+# Output = 3.1415926535
+# 8979323846
+# 2643383279
+
+# Working with a File's Contents
+from pathlib import Path
+
+path = Path('pi_digits.txt')
+contents = path.read_text().rstrip()
+
+lines = contents.splitlines()
+pi_string = ''
+for line in lines:
+    pi_string += line.strip()
+
+print(pi_string)
+# 3.141592653589793238462643383279
+print(len(pi_string))
+# 32
+
+# Is Your Birthday Contained in Pi?
+from pathlib import Path
+
+path = Path('pi_digits.txt')
+contents = path.read_text().rstrip()
+
+lines = contents.splitlines()
+pi_string = ''
+for line in lines:
+    pi_string += line.strip()
+
+birthday = input("Enter your birthday in the format of mmddyy: ")
+if birthday in pi_string:
+    print("Your birthday appears in the first million digits of pi!")
+else:
+    print("Your birthday does not appear in the first million digits of pi!")
+
 ```
 ### Writing to a File
 ```python

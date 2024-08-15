@@ -1969,6 +1969,75 @@ path.write_text(contents)
 ```
 ### Exceptions
 ```python
+# Handling the ZeroDivisionError Exception
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You can't divide by zero")
+
+# Using Exceptions to Prevent Crashes
+print("Give me two numbers, and I'll divide them.")
+print("Enter 'q' to quit.")
+
+while True:
+    first_number = input("First number: ")
+    if first_number == 'q':
+        break
+    second_number = input("Second number: ")
+    if second_number == 'q':
+        break
+    try:
+        answer = int(first_number) / int(second_number)
+    except ZeroDivisionError:
+        print("You can't divide by zero!")
+    else:
+        print(answer)
+
+# Handling the FileNotFoundError Exception
+from pathlib import Path
+path = Path('alice.txt')
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+
+# Analyzing Text
+from pathlib import Path
+path = Path('alice.txt')
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+else:
+    # Count the approximate number of words in the file:
+    words = contents.split()
+    num_words = len(words)
+    print(f"The file {path} contains ~{num_words} words.")
+
+# Working with Multiple Files
+from pathlib import Path
+
+
+def count_words(path):
+    """Count the approximate number of words in a file."""
+    try:
+        contents = path.read_text(encoding='utf-8')
+    except FileNotFoundError:
+        print(f"Sorry, the file {path} does not exist.")
+    else:
+        # Count the approximate number of words in the file:
+        words = contents.split()
+        num_words = len(words)
+        print(f"The file {path} contains ~{num_words} words.")
+
+
+filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt',
+             'little_women.txt']
+
+for filename in filenames:
+    path = Path(filename)
+    count_words(path)
+
 ```
 ### Storing Data
 ```python
